@@ -1,5 +1,5 @@
 # TeamAeroPizza
-this repository is to merge all the work made by our competitive programming team.
+This repository is to merge all the work made by our competitive programming team.
 
 ### What you will find in this repo:
 - Solutions to problems from many online judges such as : UVA, URI, hackerrank, SPOJ, etc
