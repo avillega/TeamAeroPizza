@@ -18,7 +18,7 @@ const int MAX = int( 2e6 );
 #define f(i, a) for(int i = 0; i < a; i++) //
 #define E 2.718281828459045
 #define PI 3.141592653589793
-#define fill ( a , v ) memset ( a , v , sizeof a
+#define fill ( a , v ) memset ( a , v , sizeof a )
 
 int main(){_
 ios_base :: sync_with_stdio ( false ); cin . tie ( NULL
