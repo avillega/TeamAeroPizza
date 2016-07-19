@@ -21,7 +21,7 @@ const int MAX = int( 2e6 );
 #define fill ( a , v ) memset ( a , v , sizeof a )
 
 int main(){_
-ios_base :: sync_with_stdio ( false ); cin . tie ( NULL
+_ ios_base::sync_with_stdio(false);cin.tie(NULL)
     //esctructura general (La primera linea tine la cant casos de prueba)
     int N;
     cin >> N;
