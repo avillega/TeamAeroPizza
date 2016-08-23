@@ -1,0 +1,51 @@
+dfs(node start) {
+ stack<node> s;
+ s.push(start);
+ while (s.empty() == false) {
+  top = s.top();
+  s.pop();
+
+  if (top is not marked as visited) {
+   check for termination condition (have we reached the node we want to?)
+
+   mark top as visited;
+   add all of top's neighbors to the stack.
+  }
+ }
+}
+
+dfs(node current) {
+ mark current as visited;
+ visit all of current's unvisited neighbors by calling dfs(neighbor)
+}
+
+bfs(node start) {
+ queue<node> s;
+ s.push(start);
+ mark start as visited
+ while (s.empty() == false) {
+  top = s.front();
+  s.pop();
+
+  check for termination condition (have we reached the node we want to?)
+
+  add all of top's unvisited neighbors to the queue
+  mark all of top's unvisited neighbors as visited
+ }
+}
+
+DIJKSTRA (Grafo G, nodo_fuente s)       
+       para u ∈ V[G] hacer
+           distancia[u] = INFINITO
+           padre[u] = NULL
+           visto[u] = false
+       distancia[s] = 0
+       adicionar (cola, (s, distancia[s]))
+       mientras que cola no es vacía hacer
+           u = extraer_mínimo(cola)
+           visto[u] = true
+           para todos v ∈ adyacencia[u] hacer
+               si no visto[v] y distancia[v] > distancia[u] + peso (u, v) hacer
+                   distancia[v] = distancia[u] + peso (u, v)
+                   padre[v] = u
+                   adicionar(cola,(v, distancia[v]))
