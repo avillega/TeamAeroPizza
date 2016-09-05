@@ -13,7 +13,7 @@ dfs(node start) {
   }
  }
 }
-
+//DFS recursivo
 dfs(node current) {
  mark current as visited;
  visit all of current's unvisited neighbors by calling dfs(neighbor)
